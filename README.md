@@ -134,3 +134,14 @@ git push origin main
 Netrum Labs | 🌐 [https://netrumlabs.com/](https://netrumlabs.com/)  
 Join our Discord for help 💬 [https://discord.gg/87hVVDuppf](https://discord.gg/87hVVDuppf)
 
+
+## After your PR is merged
+
+- Your profile appears in the `dev/` registry once the maintainers merge your PR.
+- Keep your fork in sync before opening a new PR: use the "Sync fork" button on GitHub, or `git fetch upstream` then `git rebase upstream/main`.
+
+## Troubleshooting
+
+- **`npm install` fails** - make sure Node.js v18 or above is installed (`node -v`), then delete `node_modules` and `package-lock.json` and run `npm install` again.
+- **Wrong folder name** - your profile must live in `dev/<your-name>-dev/application.md`; a different folder name will not be picked up by the registry.
+- **PR not showing your profile** - check that `application.md` is inside your own `dev/<your-name>-dev/` folder and that the file is committed on your branch, not on `main`.
